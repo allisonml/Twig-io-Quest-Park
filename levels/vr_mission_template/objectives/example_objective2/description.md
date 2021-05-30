@@ -3,7 +3,6 @@
 <div class="aside">
 <h3>To-Do List</h3>
 <ul>
-  <li>Read the lesson</li>
   <li>Understand how many times a given loop runs</li>
   <li>Understand the result of running a loop</li>
   <li>Enter in the necessary integers and/or strings</li>
@@ -12,7 +11,7 @@
 </div>
 
 What are for loops? Why are they useful?
-- Loops are ways to repeat operations multiple times without having to write repetitive doe!
+- Loops are ways to repeat operations multiple times without having to write repetitive code!
 
 ## Can you hear the bird in that tree? What a beautiful song.
 Let's look at this example of a for loop:
