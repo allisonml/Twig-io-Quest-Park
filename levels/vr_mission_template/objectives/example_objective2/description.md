@@ -48,7 +48,7 @@ You and some friends decided to play a game of tag. One of them's talking, but y
 
 ```js
 var secretMessage = ''
-for(let count = 5; count >=; count--) {
+for(let count = 5; count >= 1; count--) {
     secretMessage = secretMessage + count + ", ";
 }
 secretMessage = secretMessage + "ready or not!";
