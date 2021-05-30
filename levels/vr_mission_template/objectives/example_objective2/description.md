@@ -35,10 +35,10 @@ It works like this:
 Take a look at this code:
 ```js
 for(let i = 0; i < 3; i++) {
-    console.log('Cheep!');
+    console.log('Chirp!');
 }
 ```
-How many times is 'Cheep!' logged/printed?
+How many times is 'Chirp!' logged/printed?
 
 ## A Friendly Game of Tag
 To know:
