@@ -53,7 +53,8 @@ for(let count = 5; count >= 1; count--) {
 }
 secretMessage = secretMessage + "ready or not!";
 ```
-What are they saying? (In other words, what is the value of secretMessage?)
+What are they saying? In other words, what is the value of secretMessage?
+Do not include the quotation marks or apostrophes in your response.
 
 
 CHECK:

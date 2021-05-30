@@ -26,7 +26,7 @@ module.exports = async function (helper) {
     } catch (e) {
       return helper.fail(`
         The first answer you provided was either not a number, or not the
-        correct response for "How many times is 'Cheep' logged/printed?".
+        correct response for "How many times is 'Chirp' logged/printed?".
       `);
     }
 
@@ -35,8 +35,8 @@ module.exports = async function (helper) {
   // negative feedback at once, have the player iterate.
   if (!answer2 || !isTwilio(answer2)) {
     return helper.fail(`
-      The answer to the second question is incorrect.
-      Hint:
+      The answer to the second question is incorrect. Use the help tab if you need a hint.
+
     `);
   }
 
