@@ -3,23 +3,33 @@
 <div class="aside">
 <h3>To-Do List</h3>
 <ul>
-  <li>It's good to keep high level tasks here.</li>
-  <li>Let players know when to click <em>HACK</em>.</li>
+  <li>Believe in yourself</li>
+  <li>Make a list of 3 strings</li>
+  <li>Think of how to retrieve an item from an array </li>
+  <li>Enter both responses</li>
+  <li>Click <em>HACK</em>.</li>
 </ul>
 </div>
 
-Give players a little bit of information about what they need to do to hack past this objective. If you find yourself writing more than a few short paragraphs of text, it's likely your objective is too big!
 
 ## What can you see?
 
-Some times you wan to talk about additional concepts beyond the high level goal that might help players accomplish the high level goal.
+Isn't this a beautiful park? There's nothing like some greenery and a breath of fresh air to cheer you up.
+Why don't we try making a list of 3 items that you can see at the park?
+Fill in the blank:
 
 ```js
-var thingsISee = __________________
+var thingsISee = __________________;
 ```
 
 ## First thing's first
+Now that I have my array of items that I see around me at the park, how can I use its elements?
+I want to print out the first item on your list to my console. How would I fill in the blank:
 
-- lil tutorial
+```js
+console.log(_________);
+```
+Hint: you'll probably need the index of the element
 
-Describe the final values for your player one last time. Then ask them to click the _HACK_ button.
+Your response to the first question should be an array of 3 items and your response to the second question should be a method that takes in an integer.
+Then click the _HACK_ button.

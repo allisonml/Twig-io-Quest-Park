@@ -26,14 +26,14 @@ module.exports = async function (helper) {
   if (!answer1 || !isAList(answer1)) {
     return helper.fail(`
       The answer to the first question is incorrect. T
-      Hint:
+      Hint: lists can be written as [element1, element2, ...]
     `);
   }
 
     if (!answer2 || !getsFirstElement(answer2)) {
       return helper.fail(`
-        The answer to the second question is incorrect.
-        Hint:
+        The answer to the second question is incorrect. Remember that array indices start with 0, not 1.
+        If you still need help, check out the help page for more info.
       `);
     }
 
