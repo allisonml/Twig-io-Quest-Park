@@ -44,12 +44,12 @@ How many times is 'Cheep!' logged/printed?
 To know:
 - the "+" operator is one of the most basic ways to connect, append, or concatenate strings
 
-You and some friends decided to play a game of tag. One of them's talking, but you're too far to hear.
+You and some friends decided to play a game of tag. One of them is talking, but you're too far to hear.
 
 ```js
 var secretMessage = ''
 for(let count = 5; count >= 1; count--) {
-    secretMessage = secretMessage + count + ", ";
+    secretMessage = secretMessage + count + ", "; 
 }
 secretMessage = secretMessage + "ready or not!";
 ```
