@@ -23,22 +23,20 @@ module.exports = async function (helper) {
   // Next, you test the user input - fail fast if they get one of the
   // answers wrong, or some aspect is wrong! Don't provide too much
   // negative feedback at once, have the player iterate.
-  if (!answer1 || !isTwilio(answer1)) {
+  if (!answer1 || !isAList(answer1)) {
     return helper.fail(`
-      The answer to the first question is incorrect. The company that
-      makes TwilioQuest starts with a "T" and ends with a "wilio".
+      The answer to the first question is incorrect. T
+      Hint:
     `);
   }
 
-  // You can use npm or core Node.js dependencies in your validators!
-  try {
-    assert.strictEqual(R.add(2, 2), Number(answer2));
-  } catch (e) {
-    return helper.fail(`
-      The second answer you provided was either not a number, or not the
-      correct response for "what is 2 + 2".
-    `);
-  }
+    if (!answer2 || !getsFirstElement(answer2)) {
+      return helper.fail(`
+        The answer to the second question is incorrect.
+        Hint:
+      `);
+    }
+
 
   // The way we usually write validators is to fail fast, and then if we reach
   // the end, we know the user got all the answers right!

@@ -1,4 +1,4 @@
-# Example Objective
+# How do we use loops?
 
 <div class="aside">
 <h3>To-Do List</h3>
@@ -8,14 +8,39 @@
 </ul>
 </div>
 
-Give players a little bit of information about what they need to do to hack past this objective. If you find yourself writing more than a few short paragraphs of text, it's likely your objective is too big!
+What are loops? Why are they useful?
+- 
 
-## You can make sub headers with more information
+## Can you hear the bird in that tree? What a beautiful song.
 
-Some times you wan to talk about additional concepts beyond the high level goal that might help players accomplish the high level goal.
+- lil tutorial
+
+Take a look at this code:
+```js
+for(let i = 0; i < 3; i++) {
+    console.log('Cheep!');
+}
+```
+How many times is 'Cheep!' logged/printed?
+
+## A Friendly Game of Tag
+Things to know:
+- the "+" operator is one of the most basic ways to connect, append, or concatenate strings
+- 
+
+You and some friends decided to play a game of tag. One of them's talking, but you're too far to hear.
 
 ```js
-const areCodeSamplesVeryHelpful = true;
+var secretMessage = ''
+for(let count = 5; count >=; count--) {
+    secretMessage = secretMessage + count + ", ";
+}
+secretMessage = secretMessage + "ready or not!";
 ```
+What are they saying? (In other words, what is the value of secretMessage?)
+
 
 Describe the final values for your player one last time. Then ask them to click the _HACK_ button.
+- your first response should be an integer
+- your second response should be a string, excluding the quotation  marks or apostrophes
+

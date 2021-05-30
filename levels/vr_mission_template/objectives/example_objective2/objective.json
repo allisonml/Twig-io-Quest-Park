@@ -1,18 +1,18 @@
 {
-  "title": "Example Objective 2",
-  "description": "This is what an <strong>objective description</strong> looks like!",
+  "title": "Loop-dy Loop-dy Loo",
+  "description": "Great job so far! Now let's take a look at <strong>loops</strong>!",
   "validation_fields": [
     {
       "name": "answer1",
       "type": "text",
       "placeholder": "type your answer here",
-      "label": "What is the name of the company that makes TwilioQuest?"
+      "label": "How many times did the bird chirp?"
     },
     {
       "name": "answer2",
       "type": "text",
       "placeholder": "type your answer here",
-      "label": "What is 2 + 2? Write the numerical response below."
+      "label": "What is the value of the variable \"secretMessage\"?"
     }
   ],
   "rewards": {
