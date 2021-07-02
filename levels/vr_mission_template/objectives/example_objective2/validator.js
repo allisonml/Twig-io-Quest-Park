@@ -5,7 +5,7 @@ Node.js module (since that's what this is!)
 */
 const assert = require("assert");
 const R = require("ramda");
-const { isTwilio } = require("../lib/example_helper");
+const { isReadyOrNot } = require("../lib/example_helper");
 
 /*
 Objective validators export a single function, which is passed a helper
@@ -33,7 +33,7 @@ module.exports = async function (helper) {
   // Next, you test the user input - fail fast if they get one of the
   // answers wrong, or some aspect is wrong! Don't provide too much
   // negative feedback at once, have the player iterate.
-  if (!answer2 || !isTwilio(answer2)) {
+  if (!answer2 || !isReadyOrNot(answer2)) {
     return helper.fail(`
       The answer to the second question is incorrect. Use the help tab if you need a hint.
 

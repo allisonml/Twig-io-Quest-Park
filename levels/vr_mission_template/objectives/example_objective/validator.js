@@ -5,7 +5,7 @@ Node.js module (since that's what this is!)
 */
 const assert = require("assert");
 const R = require("ramda");
-const { isTwilio } = require("../lib/example_helper");
+const { isListOfThree, getsFirstElement } = require("../lib/example_helper");
 
 /*
 Objective validators export a single function, which is passed a helper
@@ -23,10 +23,10 @@ module.exports = async function (helper) {
   // Next, you test the user input - fail fast if they get one of the
   // answers wrong, or some aspect is wrong! Don't provide too much
   // negative feedback at once, have the player iterate.
-  if (!answer1 || !isAList(answer1)) {
+  if (!answer1 || !isListOfThree(answer1)) {
     return helper.fail(`
-      The answer to the first question is incorrect. T
-      Hint: lists can be written as [element1, element2, ...]
+      The answer to the first question is incorrect.
+      Hint: Make sure you\'re listing your items as strings!
     `);
   }
 

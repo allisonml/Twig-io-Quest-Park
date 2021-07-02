@@ -15,7 +15,7 @@
 ## What can you see?
 
 Isn't this a beautiful park? There's nothing like some greenery and a breath of fresh air to cheer you up.
-Why don't we try making a list of 3 items that you can see at the park?
+Why don't we try making a list of 3 items (as strings) that you can see at the park?
 Fill in the blank:
 
 ```js
