@@ -11,19 +11,9 @@ function isListOfThree(response = '') {
 
 }
 
-//module.exports = {
-//  isAList,
-//  getsFirstElement,
-//  isReadyOrNot
-//};
-
 function getsFirstElement(response = '') {
   return response.toLowerCase() === 'thingsisee[0]';
 }
-
-//module.exports = {
-//  getsFirstElement
-//};
 
 function isReadyOrNot(testString = '') {
   return testString.toLowerCase() === '5, 4, 3, 2, 1, ready or not!';
