@@ -3,11 +3,11 @@
 
 function isListOfThreeStrings(response = "") {
     try {
-    let list = JSON.parse(response);
+    var list = JSON.parse(response);
     } catch (e) {
         return false;
     }
-    let isListLengthThree = list.length === 3;
+    let isListLengthThree = Boolean(list.length === 3);
     let isListOfStrings = true;
     for(let item in list) {
         if(typeof(item) !== "string") {
@@ -15,6 +15,8 @@ function isListOfThreeStrings(response = "") {
         }
     }
     return isListLengthThree && isListOfStrings;
+
+
 
 }
 
