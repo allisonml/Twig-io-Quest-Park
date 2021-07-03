@@ -1,26 +1,33 @@
 // This is an example of how you might use objective validation helpers
 // in your own code. You don't have to, but you'll often want to!
 
-function isListOfThree(response = '') {
+function isListOfThreeStrings(response = "") {
     try {
-    var list = JSON.parse(response);
+    let list = JSON.parse(response);
     } catch (e) {
         return false;
     }
-    return list.length === 3;
+    let isListLengthThree = list.length === 3;
+    let isListOfStrings = true;
+    for(let item in list) {
+        if(typeof(item) !== "string") {
+            isListOfStrings = false;
+        }
+    }
+    return isListLengthThree && isListOfStrings;
 
 }
 
-function getsFirstElement(response = '') {
-  return response.toLowerCase() === 'thingsisee[0]';
+function getsFirstElement(response = "") {
+  return response === "thingsISee[0]";
 }
 
-function isReadyOrNot(testString = '') {
-  return testString.toLowerCase() === '5, 4, 3, 2, 1, ready or not!';
+function isReadyOrNot(testString = "") {
+  return testString.toLowerCase() === "5, 4, 3, 2, 1, ready or not!";
 }
 
 module.exports = {
-    isListOfThree,
+    isListOfThreeStrings,
     getsFirstElement,
     isReadyOrNot
 };

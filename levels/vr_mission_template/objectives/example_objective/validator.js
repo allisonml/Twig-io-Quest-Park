@@ -5,7 +5,7 @@ Node.js module (since that's what this is!)
 */
 const assert = require("assert");
 const R = require("ramda");
-const { isListOfThree, getsFirstElement } = require("../lib/example_helper");
+const { isListOfThreeStrings, getsFirstElement } = require("../lib/example_helper");
 
 /*
 Objective validators export a single function, which is passed a helper
@@ -23,7 +23,7 @@ module.exports = async function (helper) {
   // Next, you test the user input - fail fast if they get one of the
   // answers wrong, or some aspect is wrong! Don't provide too much
   // negative feedback at once, have the player iterate.
-  if (!answer1 || !isListOfThree(answer1)) {
+  if (!answer1 || !isListOfThreeStrings(answer1)) {
     return helper.fail(`
       The answer to the first question is incorrect.
       Hint: Make sure you\'re listing your items as strings!
@@ -33,6 +33,7 @@ module.exports = async function (helper) {
     if (!answer2 || !getsFirstElement(answer2)) {
       return helper.fail(`
         The answer to the second question is incorrect. Remember that array indices start with 0, not 1.
+        Also, make sure to use the correct letter casing in your variable names!
         If you still need help, check out the help page for more info.
       `);
     }
