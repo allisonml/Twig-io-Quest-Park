@@ -231,22 +231,22 @@
                  "y":414.5
                 }, 
                 {
-                 "height":0,
-                 "id":109,
-                 "name":"cedric",
-                 "point":true,
+                 "gid":10016,
+                 "height":32,
+                 "id":111,
+                 "name":"",
                  "properties":[
                         {
                          "name":"conversation",
                          "type":"string",
                          "value":"cedric"
                         }],
-                 "rotation":0,
-                 "type":"npc",
+                 "rotation":1.644322200254,
+                 "type":"",
                  "visible":true,
-                 "width":0,
-                 "x":119,
-                 "y":287
+                 "width":32,
+                 "x":116.047470181191,
+                 "y":333.534293114307
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -294,7 +294,7 @@
          "y":0
         }],
  "nextlayerid":44,
- "nextobjectid":111,
+ "nextobjectid":112,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.6.0",
@@ -320,6 +320,10 @@
         {
          "firstgid":10014,
          "source":"..\/..\/..\/tilesets\/MyCustomObjects.json"
+        }, 
+        {
+         "firstgid":10015,
+         "source":"..\/..\/..\/..\/.bundled\/tilesets\/TwilioQuestNPCs.json"
         }],
  "tilewidth":24,
  "type":"map",
